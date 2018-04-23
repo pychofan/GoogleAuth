@@ -2,12 +2,15 @@
 <form method="post" >
 <label for='name' >Code: </label>
 <input type='text' name='name' id='name' maxlength="50" placeholder="<?php echo $name  ?>" required />
+ <label for='bild' >URL: </label>
+<input type='text' name='bild' id='bild'placeholder="<?php echo $name  ?>" required />
 <span class="validity"></span>
 <input type="submit" value="Submit"/>
 </form>
 <?php
 require_once 'PHPGangsta/GoogleAuthenticator.php';
-$imageurl = "image.php?w=200&h=200&image=https://wallpaperscraft.com/image/emma_stone_redhead_hair_room_shirt_64189_1920x1080.jpg" ;
+$bild = $_POST['bild'] ;
+$imageurl = "image.php?w=200&h=200&image=$bild" ;
 
 $ga = new PHPGangsta_GoogleAuthenticator();
 #$secret = $ga->createSecret();
