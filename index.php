@@ -9,6 +9,8 @@
 </form>
 <?php
 require_once 'PHPGangsta/GoogleAuthenticator.php';
+$bild = 0 ;
+$oneCode =0 ;
 $bild = $_POST['bild'] ;
 $imageurl = "image.php?w=200&h=200&image=$bild" ;
 
