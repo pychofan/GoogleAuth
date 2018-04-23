@@ -7,6 +7,7 @@
 </form>
 <?php
 require_once 'PHPGangsta/GoogleAuthenticator.php';
+$imageurl = "image.php?w=200&h=200&image=https://wallpaperscraft.com/image/emma_stone_redhead_hair_room_shirt_64189_1920x1080.jpg" ;
 
 $ga = new PHPGangsta_GoogleAuthenticator();
 #$secret = $ga->createSecret();
@@ -24,7 +25,7 @@ $checkResult = $ga->verifyCode($secret, $oneCode, 2);    // 2 = 2*30sec clock to
 echo '<center>'.$checkResult.'</center>' ;
 if ($checkResult) {
     echo 'OK';
-    echo '<img src="https://wallpaperscraft.com/image/emma_stone_redhead_hair_room_shirt_64189_1920x1080.jpg" alt="This is Emma :D">';
+    echo '<img src="'.$imageurl.'" alt="This is Emma :D">';
 } else {
     echo 'FAILED';
 }
