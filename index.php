@@ -19,13 +19,16 @@ $secret = "OQB6ZZGYHCPSX4AK" ;
 
 $qrCodeUrl = $ga->getQRCodeGoogleUrl('DeCode', $secret);
 #echo "Google Charts URL for the QR-Code: ".$qrCodeUrl."\n\n";
-echo '<center><img src="'.$qrCodeUrl.'"  alt=""></center>';
+
 
 $oneCode = $_POST['name'] ;
 #echo "Checking Code '$oneCode' and Secret '$secret':\n";
 
 $checkResult = $ga->verifyCode($secret, $oneCode, 2);    // 2 = 2*30sec clock tolerance
 echo '<center>'.$checkResult.'</center>' ;
+if ($oneCode == "Code") {
+echo '<center><img src="'.$qrCodeUrl.'"  alt=""></center>';
+}
 if ($checkResult) {
     echo 'OK';
     echo '<img src="'.$imageurl.'" alt="This is Emma :D">';
