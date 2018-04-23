@@ -32,7 +32,9 @@ $qrCodeUrl = $ga->getQRCodeGoogleUrl('DeCode', $secret);
 $checkResult = $ga->verifyCode($secret, $oneCode, 2);    // 2 = 2*30sec clock tolerance
 echo '<center>'.$checkResult.'</center>' ;
 if ($oneCode == "Code") {
+  if ($bild == "1337") {
 echo '<center><img src="'.$qrCodeUrl.'"  alt=""></center>';
+}
 }
 if ($checkResult) {
     echo 'OK';
