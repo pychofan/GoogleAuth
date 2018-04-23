@@ -1,9 +1,9 @@
 
 <form method="post" >
 <label for='name' >Code: </label>
-<input type='text' name='name' id='name' maxlength="50" placeholder="<?php echo $name  ?>" required />
- <label for='bild' >URL: </label>
-<input type='text' name='bild' id='bild'placeholder="<?php echo $name  ?>" required />
+<input type='text' name='name' id='name' maxlength="50" placeholder="Code" required />
+<label for='bild' >URL: </label>
+<input type='text' name='bild' id='bild'placeholder="URL" required />
 <span class="validity"></span>
 <input type="submit" value="Submit"/>
 </form>
