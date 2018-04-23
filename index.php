@@ -16,7 +16,7 @@ if (isset($_POST['name'])) {
 $bild = $_POST['bild'];
 $oneCode = $_POST['name'];
 #echo "Checking Code '$oneCode' and Secret '$secret':\n";
-}
+
 require_once 'PHPGangsta/GoogleAuthenticator.php';
 
 $imageurl = "image.php?w=200&h=200&image=$bild" ;
@@ -39,5 +39,6 @@ if ($checkResult) {
     echo '<img src="'.$imageurl.'" alt="This is Emma :D">';
 } else {
     echo 'FAILED';
+}
 }
 ?>
