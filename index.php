@@ -24,6 +24,7 @@ $checkResult = $ga->verifyCode($secret, $oneCode, 2);    // 2 = 2*30sec clock to
 echo '<center>'.$checkResult.'</center>' ;
 if ($checkResult) {
     echo 'OK';
+    <img src="https://wallpaperscraft.com/image/emma_stone_redhead_hair_room_shirt_64189_1920x1080.jpg" alt="This is Emma :D">;
 } else {
     echo 'FAILED';
 }
