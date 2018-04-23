@@ -1,4 +1,8 @@
-
+<head>
+    <title>Google Auth Example</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+</head>
 <form method="post" >
 <label for='name' >Code: </label>
 <input type='text' name='name' id='name' maxlength="50" placeholder="Code" required />
@@ -9,7 +13,7 @@
 </form>
 <?php
 require_once 'PHPGangsta/GoogleAuthenticator.php';
-$bild = $_POST['bild'] ;
+$bild = $_POST['bild'];
 $imageurl = "image.php?w=200&h=200&image=$bild" ;
 
 $ga = new PHPGangsta_GoogleAuthenticator();
@@ -21,7 +25,7 @@ $qrCodeUrl = $ga->getQRCodeGoogleUrl('DeCode', $secret);
 #echo "Google Charts URL for the QR-Code: ".$qrCodeUrl."\n\n";
 
 
-$oneCode = $_POST['name'] ;
+$oneCode = $_POST['name'];
 #echo "Checking Code '$oneCode' and Secret '$secret':\n";
 
 $checkResult = $ga->verifyCode($secret, $oneCode, 2);    // 2 = 2*30sec clock tolerance
