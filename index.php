@@ -12,7 +12,7 @@
 <input type="submit" value="Submit"/>
 </form>
 <?php
-if (isset($_POST)) {
+if (isset($_POST['name'])) {
 $bild = $_POST['bild'];
 $oneCode = $_POST['name'];
 #echo "Checking Code '$oneCode' and Secret '$secret':\n";
@@ -40,6 +40,4 @@ if ($checkResult) {
 } else {
     echo 'FAILED';
 }
-$bild = 0 ;
-$oneCode = 0 ;
 ?>
