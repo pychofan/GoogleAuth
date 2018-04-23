@@ -36,7 +36,10 @@ echo '<center><img src="'.$qrCodeUrl.'"  alt=""></center>';
 }
 if ($checkResult) {
     echo 'OK';
+    if ($_POST['bild'])
+    {
     echo '<img src="'.$imageurl.'" alt="This is Emma :D">';
+    }
 } else {
     echo 'FAILED';
 }
