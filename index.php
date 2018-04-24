@@ -27,14 +27,9 @@ $imageurl = "image.php?w=200&h=200&image=$bild" ;
 
 $ga = new PHPGangsta_GoogleAuthenticator();
 #$secret = $ga->createSecret();
-if ($ben == "alex") {
-$secret = "OQB6ZZGYHCPSX4AK" ;
-echo "Secret is: ".$secret."\n\n";
-}
-if ($ben == "cristo") {
-$secret = "OQB6ZZGYHCPSX66K" ;
-echo "Secret is: ".$secret."\n\n";
-}
+
+include 'user.php' ;
+
 $qrCodeUrl = $ga->getQRCodeGoogleUrl('DeCode', $secret);
 #echo "Google Charts URL for the QR-Code: ".$qrCodeUrl."\n\n";
 
