@@ -21,7 +21,7 @@ echo "Secret is: ".$secret."\n\n";
 }
 
 if ($ben == "ink") {
-$secret = "OQB6ZZGYHCPSX99K" ;
+$secret = "OQB6ZZGYHCPSXBBK" ;
 echo "Secret is: ".$secret."\n\n";
 }
 
