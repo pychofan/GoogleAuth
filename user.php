@@ -10,18 +10,18 @@ $secret = "OQB6ZZGYHCPSX66K" ;
 echo "Secret is: ".$secret."\n\n";
 }
 
-if ($ben == "cristo") {
-$secret = "OQB6ZZGYHCPSX66K" ;
+if ($ben == "ömar") {
+$secret = "OQB6ZZGYHCPSX77K" ;
 echo "Secret is: ".$secret."\n\n";
 }
 
-if ($ben == "cristo") {
-$secret = "OQB6ZZGYHCPSX66K" ;
+if ($ben == "frank") {
+$secret = "OQB6ZZGYHCPSX88K" ;
 echo "Secret is: ".$secret."\n\n";
 }
 
-if ($ben == "cristo") {
-$secret = "OQB6ZZGYHCPSX66K" ;
+if ($ben == "ink") {
+$secret = "OQB6ZZGYHCPSX99K" ;
 echo "Secret is: ".$secret."\n\n";
 }
 
