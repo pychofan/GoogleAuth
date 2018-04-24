@@ -5,13 +5,20 @@
 </head>
 <form method="post" >
 <label for='name' >Code: </label>
-<input type='text' name='name' id='name' maxlength="50" placeholder="Code" required />
+<input type='text' name='name' id='name' maxlength="50" placeholder="Code"/>
 <label for='bild' >URL: </label>
 <input type='text' name='bild' id='bild'placeholder="URL" />
 <span class="validity"></span>
 <input type="submit" value="Submit"/>
 </form>
+
 <?php
+$link = mysql_connect('localhost', 'root', 'maximilian1');
+if (!$link) {
+    die('Verbindung schlug fehl: ' . mysql_error());
+}
+echo 'Erfolgreich verbunden';
+mysql_close($link);
 if (isset($_POST['name'])) {
 $bild = $_POST['bild'];
 $oneCode = $_POST['name'];
