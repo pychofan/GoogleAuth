@@ -29,11 +29,12 @@ $ga = new PHPGangsta_GoogleAuthenticator();
 #$secret = $ga->createSecret();
 
 include 'user.php' ;
-
+if (isset($secret)) {
 $qrCodeUrl = $ga->getQRCodeGoogleUrl('DeCode', $secret);
 #echo "Google Charts URL for the QR-Code: ".$qrCodeUrl."\n\n";
 
 $checkResult = $ga->verifyCode($secret, $oneCode, 2);    // 2 = 2*30sec clock tolerance
+}
 echo '<center>'.$checkResult.'</center>' ;
 if ($oneCode == "Code") {
   if ($bild == "1337") {
