@@ -11,7 +11,7 @@ echo "Secret is: ".$secret."\n\n";
 }
 
 if ($ben == "ömar") {
-$secret = "OQB6ZZGYHCPSX77K" ;
+$secret = "OQB6ZZGYHCPSX7AK" ;
 echo "Secret is: ".$secret."\n\n";
 }
 
