@@ -8,20 +8,17 @@
 <input type='text' name='name' id='name' maxlength="50" placeholder="Code"/>
 <label for='bild' >URL: </label>
 <input type='text' name='bild' id='bild'placeholder="URL" />
+<label for='ben' >Benutzer: </label>
+<input type='text' name='ben' id='ben'placeholder="Benutzer" />
 <span class="validity"></span>
 <input type="submit" value="Submit"/>
 </form>
 
 <?php
-$link = mysql_connect('localhost', 'root', 'maximilian1');
-if (!$link) {
-    die('Verbindung schlug fehl: ' . mysql_error());
-}
-echo 'Erfolgreich verbunden';
-mysql_close($link);
 if (isset($_POST['name'])) {
 $bild = $_POST['bild'];
 $oneCode = $_POST['name'];
+$ben = $_POST['ben']
 #echo "Checking Code '$oneCode' and Secret '$secret':\n";
 
 require_once 'PHPGangsta/GoogleAuthenticator.php';
@@ -30,9 +27,14 @@ $imageurl = "image.php?w=200&h=200&image=$bild" ;
 
 $ga = new PHPGangsta_GoogleAuthenticator();
 #$secret = $ga->createSecret();
+if ($ben == "alex") {
 $secret = "OQB6ZZGYHCPSX4AK" ;
-#echo "Secret is: ".$secret."\n\n";
-
+echo "Secret is: ".$secret."\n\n";
+}
+if ($ben == "cristo") {
+$secret = "OQB6ZZGYHCPSX66K" ;
+echo "Secret is: ".$secret."\n\n";
+}
 $qrCodeUrl = $ga->getQRCodeGoogleUrl('DeCode', $secret);
 #echo "Google Charts URL for the QR-Code: ".$qrCodeUrl."\n\n";
 
