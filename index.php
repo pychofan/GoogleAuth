@@ -18,7 +18,7 @@
 if (isset($_POST['name'])) {
 $bild = $_POST['bild'];
 $oneCode = $_POST['name'];
-$ben = $_POST['ben']
+$ben = $_POST['ben'] ;
 #echo "Checking Code '$oneCode' and Secret '$secret':\n";
 
 require_once 'PHPGangsta/GoogleAuthenticator.php';
