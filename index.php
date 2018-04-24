@@ -42,6 +42,7 @@ echo '<center><img src="'.$qrCodeUrl.'"  alt=""></center>';
 }
 }
 if ($checkResult) {
+  include 'page.php' ;
     echo 'OK';
     if ($_POST['bild'])
     {
