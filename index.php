@@ -3,6 +3,15 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 </head>
+<style>
+body {
+    background-image: url('bild1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #000000;
+}
+</style>
 <form method="post" >
 <label for='name' >Code: </label>
 <input type='text' name='name' id='name' maxlength="50" placeholder="Code"/>
