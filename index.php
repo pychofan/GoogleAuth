@@ -12,7 +12,7 @@ body {
     background-color: #000000;
 }
 </style>
-<form method="post" >
+<font color='b3c4dd'><center><form method="post" >
 <label for='name' >Code: </label>
 <input type='text' name='name' id='name' maxlength="50" placeholder="Code"/>
 <label for='bild' >URL: </label>
@@ -21,7 +21,7 @@ body {
 <input type='text' name='ben' id='ben'placeholder="Benutzer" />
 <span class="validity"></span>
 <input type="submit" value="Submit"/>
-</form>
+</form></center></font>
 
 <?php
 if (isset($_POST['name'])) {
