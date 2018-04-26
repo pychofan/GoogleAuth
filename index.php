@@ -1,5 +1,5 @@
 <head>
-<title>Google Auth Example 2.0</title>
+<title>Google Auth Example</title>
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 </head>
